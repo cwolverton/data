@@ -1,3 +1,8 @@
+# This script is used to process raw CSV data files created from the output of the MATLAB version of ROTATO.
+# It assumes the function 'rotateTrack' produced the CSV file. There are dependencies in this script
+# and in the script 'opn.R' to the specific names of columns in the header row, including the 
+# columns named 'difference' and 'minutes'.
+
 library(ggplot2)
 library(tools)
 
