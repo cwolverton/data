@@ -1,7 +1,7 @@
 library(ggplot2)
 library(tools)
 
-setwd("~/Documents/Data Analysis/ROTATO")
+setwd("~/Documents/Data Analysis/pin7lateral_MATATO")
 source("opn.R")
 # Read the selected file into a data frame called 'data' as a csv
 #data <- read.csv(pathFilename, header = TRUE) # these files do have a header row
@@ -31,7 +31,7 @@ avg <- function( g, a, w = 11, f = 60, n = 180 ){
   return(results)
 } 
 # include lag, angle at minimum
-avgResult <- avg(g=130, a=45) 
+avgResult <- avg(g=30, a=45) 
 # This creates a matrix with the results of output from avg function
 output1 <- as.matrix(t(avgResult))
 # This appends the results of output1 to a file
